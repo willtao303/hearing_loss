@@ -1,0 +1,37 @@
+body{
+  margin:0px;
+  position:fixed;
+  overflow:hidden;
+  min-height:100%;
+  width:100%;
+}
+.main{
+  height:100%;
+  width:100%;
+  background-image: url("../img/bg.jpg");
+  position:fixed;
+  background-size:cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.col {
+  background: aliceblue;
+  position: fixed;
+  right: 75px;
+  height: 100%;
+  width: 50%;
+  opacity: 95%;
+  animation: slide 0.8s 1;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0%;
+    right: 0px;  
+  }
+  to {
+    opacity: 95%;
+    right: 75px;
+  }
+}

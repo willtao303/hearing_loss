@@ -1,0 +1,125 @@
+body{
+  margin:0px;
+  position:fixed;
+  overflow:hidden;
+  min-height:100%;
+  width:100%;
+}
+.main{
+  height:100%;
+  width:100%;
+  background-image: url("../img/bg.jpg");
+  position:fixed;
+  background-size:cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.bar1{
+  background:powderblue;
+  min-height:100%;
+  width:33%;
+  padding-top:10px;
+  padding-left:30px;
+  padding-right:30px;
+  opacity:50%;
+  left:100px;
+  position:fixed;
+  animation: onload-bar1 1.5s 1;
+  z-index:-2;
+}
+
+@keyframes onload-bar1 {
+  from{
+    left:0px;
+    opacity:20%;
+  }
+  to{
+    left:100px;
+    opacity:50%;
+  }
+}
+
+.bar2{
+  background:skyblue;/*azure;*/
+  height:47%;
+  width:100%;
+  padding-left:40px;
+  padding-top:30px;
+  padding-bottom:30px;
+  margin:auto;
+  position: fixed;
+  top:8%;
+  animation: onload-bar2 0.9s 1;
+  opacity:50%;
+  z-index:-1;
+}
+
+@keyframes onload-bar2 {
+  from{
+    top:2%;
+    opacity:20%;
+  }
+  to{
+    top:8%;
+    opacity:50%;
+  }
+}
+
+
+
+.button-container1{
+  object-fit:cover;
+  height:200px;
+  width:140px;
+  position: fixed;
+  bottom:50px;
+  right:50px;
+}
+
+.box1{
+  background:#004b56;
+  position:fixed;
+  bottom:-150px;
+  right:-250px;
+  width: 800px;
+  height: 300px;
+  rotate:-30deg;
+  z-index:-1;
+  transition: all 0.5s;
+  opacity: 15%;
+}
+.button-container1:hover .box1{
+  transform:rotate(-5deg);
+  opacity: 80%;
+}
+
+
+.a{
+  height:200px;
+  width:140px;
+  display:block;
+  width: 100%;
+}
+.next-button{
+  background:transparent;
+  background-image: url("../img/arrow.png");
+  background-size:cover;
+  border:0px;
+  height:100%;
+  width:100%;
+  transition: transform 0.5s, opacity 0.5s, width 0.15s, height 0.15s;
+  opacity:20%;
+}
+.button-container1:hover .next-button{
+  transform: translateX(20px);
+  opacity:100%;
+}
+.next-button:hover{
+  cursor:pointer;
+}
+.next-button:active{
+  cursor:pointer;
+  height:90%;
+  width:90%;
+}
