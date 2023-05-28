@@ -3,23 +3,38 @@
     <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/game-style.css">
-    <script type="text/javascript" src="js/guess.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
     <title>title here</title>
   </head>
 
   <body>
     <div class="main">
-      <div class="box-flex">
-        <div class="box" id="display" onLoad="setup()">
+      <div class="pregame col">
+        <h1>gaming</h1>
+        <div class="pregame text-container">
+          <b>try to guess how safe exposure to these sounds are! </b>
+          <br>
+          <b>safe: a relatively safe sound</b>
+          <br>
+          <b>unsafe: prolonged exposure can harm your ears</b>
+          <br>
+          <b>dangerous: exposure will cause immenant harm your ears</b>
+        </div>
+        <div class="pregame start-container">
+          <button type="pregame button" class="start" id="button" onclick="setup()">Next</button>
+        </div>
+      </div>
+      <div class="game box-flex">
+        <div class="game box" id="display">
           aaaaaaa
         </div>
       </div>
-      <div class="select">
-        <div class="button-container" id="safe">
-          <button type="button" class="button" id="safe" onClick="isSafe()"></button>
+      <div class="game select">
+        <div class="game button-container" id="safe">
+          <button type="game button" class="button" id="safe" onClick="isSafe()"></button>
         </div>
-        <div class="button-container" id="unsafe">
-          <button type="button" class="button" id="unsafe" onClick="isUnsafe()"></button>
+        <div class="game button-container" id="unsafe">
+          <button type="button" class="game button" id="unsafe" onClick="isUnsafe()"></button>
         </div>
       </div>
     </div>

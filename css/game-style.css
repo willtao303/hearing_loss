@@ -5,6 +5,7 @@ body{
   min-height:100%;
   width:100%;
 }
+
 .main{
   height:100%;
   width:100%;
@@ -15,6 +16,22 @@ body{
   overflow: hidden;
 }
 
+.pregame{
+  z-index: 1;
+}
+.game{
+  visibility:hidden;
+  z-index: -1;
+}
+
+.col {
+  background: aliceblue;
+  position: fixed;
+  height: 100%;
+  width: 35%;
+  opacity: 95%;
+}
+
 @keyframes onload-fade {
   from{
     opacity:100%;
@@ -23,6 +40,8 @@ body{
     opacity:0%;
   }
 }
+
+
 
 .box-flex {
   position:fixed;
@@ -75,4 +94,4 @@ div#unsafe{
   background:#ff7947;
   border-style:solid;
   border-color:orangered;
-}*/
+}*/ 
