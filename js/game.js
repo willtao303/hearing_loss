@@ -6,7 +6,7 @@ var questions = [];
 let maxQ = 10;
 
 function setup() {
-  /*
+  
   fetch("https://withercraft303.github.io/hearing_loss/js/questions.txt")
     .then(res => res.json())
     .then((data) => {
@@ -15,7 +15,7 @@ function setup() {
   }).catch(err => {
     console.log("no file");
     console.error(err);
-  });*/
+  });
   var gameObjs = document.getElementsByClassName("game");
   for (var i = 0; i < gameObjs.length; i++){
     gameObjs[i].style.visibility = "visible";

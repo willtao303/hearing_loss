@@ -1,34 +1,32 @@
-{
-  [
-    {
-      "object": "siren",
-      "image": "images/sirens.jpg",
-      "src": "www.istockphoto.com",
-      "db": 115
-    },
-    {
-      "object": "jackhammer",
-      "image": "images/jackhammer.jpg",
-      "src": "www.istockphoto.com",
-      "db": 130
-    },
-    {
-      "object": "coffee grinder",
-      "image": "images/coffee.png",
-      "src": "www.pexels.com",
-      "db": 75
-    },
-    {
-      "object": "washing machine",
-      "image": "images/no-image.png",
-      "src": "",
-      "db": 70
-    },
-    {
-      "object": "whisper",
-      "image": "images/whisper.jpg",
-      "src": "www.123rf.com",
-      "db": 30
-    },
-  ]
-}
+[
+  {
+    "object": "siren",
+    "image": "images/sirens.jpg",
+    "src": "www.istockphoto.com",
+    "db": 115
+  },
+  {
+    "object": "jackhammer",
+    "image": "images/jackhammer.jpg",
+    "src": "www.istockphoto.com",
+    "db": 130
+  },
+  {
+    "object": "coffee grinder",
+    "image": "images/coffee.png",
+    "src": "www.pexels.com",
+    "db": 75
+  },
+  {
+    "object": "washing machine",
+    "image": "images/no-image.png",
+    "src": "",
+    "db": 70
+  },
+  {
+    "object": "whisper",
+    "image": "images/whisper.jpg",
+    "src": "www.123rf.com",
+    "db": 30
+  },
+]
