@@ -9,11 +9,27 @@ body{
 .main{
   height:100%;
   width:100%;
-  background-image: url("../img/bg.jpg");
+  background:#455961;
   position:fixed;
   background-size:cover;
   background-position: center;
   overflow: hidden;
+
+  background: linear-gradient(-45deg, #455961, #6e828a, #7680a1);
+  background-size: 400% 400%;
+  animation: gradient-bg 20s ease infinite;
+}
+
+@keyframes gradient-bg {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
 }
 
 .pregame{
@@ -54,12 +70,21 @@ body{
 
 .box{
   background:white;
-  width:25%;
-  height:25%;
+  width:40%;
+  height:40%;
   padding:30px;
   margin-left:auto;
   margin-right:auto;
+  transform: translateY(-80px);
   text-align:center;
+  display: flex;
+  flex-direction: column;
+}
+.display#display-object{
+  margin:0px;
+}
+.display#display-next{
+  visibility: hidden;
 }
 
 .select{
@@ -77,21 +102,68 @@ body{
   height: 100%;
   border-width: 2px;
 }
-div#safe{
-  margin-left:30px;
-  margin-right:auto;
+button:hover{
+  cursor:pointer;
 }
-/*button#safe{
-  background:palegreen;
-  border-style:solid;
-  border-color:forestgreen;
-}*/
-div#unsafe{
-  margin-right:30px;
-  margin-left:auto;
+
+
+
+#safe-container{
+  width:42%;
+  margin-left:5%;
 }
-/*button#unsafe{
-  background:#ff7947;
-  border-style:solid;
-  border-color:orangered;
-}*/ 
+#safe{
+  background:rgb(123, 255, 123);
+  border-style:hidden;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+#safe:hover{
+  background:rgb(94, 250, 94);
+}
+
+#unsafe-container{
+  width:30%;
+}
+#unsafe{
+  background:#ffe9ae;
+  border-style:hidden;
+}
+#unsafe:hover{
+  background: #ffe08d;
+}
+
+#dangerous-container{
+  width:18%;
+  margin-right:5%;
+}
+#dangerous{
+  background:#df6478;
+  border-style:hidden;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+#dangerous:hover{
+  background: #f13d5b;
+}
+
+.display#display-answer{
+  visibility: hidden;
+  -webkit-appearance: none; 
+  appearance: none;
+  position: fixed;
+  width: 90%;
+  height:30px;
+  margin-left:5%;
+  margin-right:5%;
+  bottom: 12%;
+  transform: translateY(40px);
+}
+.display#display-answer::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(218, 220, 226);
+}

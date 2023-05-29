@@ -9,9 +9,9 @@
 
   <body>
     <div class="main">
-      <div class="pregame col">
+      <div class="pregame col" id="pregame">
         <h1>gaming</h1>
-        <div class="pregame text-container">
+        <div class="text-container">
           <b>try to guess how safe exposure to these sounds are! </b>
           <br>
           <b>safe: a relatively safe sound</b>
@@ -20,21 +20,30 @@
           <br>
           <b>dangerous: exposure will cause immenant harm your ears</b>
         </div>
-        <div class="pregame start-container">
-          <button type="pregame button" class="start" id="button" onclick="setup()">Next</button>
+        <div class="start-container">
+          <button type="button" class="start" id="button" onclick="setup()">Next</button>
         </div>
       </div>
-      <div class="game box-flex">
-        <div class="game box" id="display">
-          aaaaaaa
+      <div class="game box-flex" id="game-display">
+        <div class="box display" id="display-container">
+          <h1 class="display" id="display-object">aaaaaaa</h1>
+          <b class="display" id="display-score">bbbbbbb</b>
+          <div class="display" id="display-next">
+            <button>Next ></button>
+            <a href="guess.html"><button>↺</button></a>
+          </div>
         </div>
       </div>
-      <div class="game select">
-        <div class="game button-container" id="safe">
-          <button type="game button" class="button" id="safe" onClick="isSafe()"></button>
+      <div class="game select" id="game-controls">
+        <input type="range" disabled="true" class="display" id="display-answer">
+        <div class="button-container" id="safe-container">
+          <button type="button" class="button" id="safe" onClick="isSafe()"></button>
         </div>
-        <div class="game button-container" id="unsafe">
-          <button type="button" class="game button" id="unsafe" onClick="isUnsafe()"></button>
+        <div class="button-container" id="unsafe-container">
+          <button type="button" class="button" id="unsafe" onClick="isUnsafe()"></button>
+        </div>
+        <div class="button-container" id="dangerous-container">
+          <button type="button" class="button" id="dangerous" onClick="isDangerous()"></button>
         </div>
       </div>
     </div>
