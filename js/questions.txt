@@ -28,5 +28,5 @@
     "image": "images/whisper.jpg",
     "src": "www.123rf.com",
     "db": 30
-  },
+  }
 ]
