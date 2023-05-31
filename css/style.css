@@ -66,7 +66,23 @@ body{
   }
 }
 
-
+.title-container{
+  text-overflow: clip;
+  left:100px;
+  top:8%;
+  transform: translate(70px,-10px);
+  height:80%;
+  width:80%;
+  position:fixed;
+}
+.title{
+  margin-top:0;
+  margin-bottom:20px;
+  font-family: Impact;
+  /*font-weight: bolder;*/
+  font-size:170px;
+  -webkit-text-fill-color: #e0e8fa;
+}
 
 .button-container1{
   object-fit:cover;

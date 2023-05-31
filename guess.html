@@ -10,24 +10,24 @@
   <body>
     <div class="main">
       <div class="pregame col" id="pregame">
-        <h1>gaming</h1>
         <div class="text-container">
-          <b>try to guess how safe exposure to these sounds are! </b>
-          <br>
-          <b>safe: a relatively safe sound</b>
-          <br>
-          <b>unsafe: prolonged exposure can harm your ears</b>
-          <br>
-          <b>dangerous: exposure will cause immenant harm your ears</b>
-        </div>
-        <div class="start-container">
-          <button type="button" class="start" id="button" onclick="setup()">Next</button>
+          <h1 id="col-title">Let's Play a Game!</h1>
+          <b>Try to guess how safe exposure to these sounds are using the following buttons: </b><br><br>
+          <div class="options">
+            <b>Green (safe): a relatively safe sound</b><br>
+            <b>Orange (unsafe): prolonged exposure can harm your ears</b><br>
+            <b>red (dangerous): exposure will cause immenant harm your ears</b><br>
+          </div><br> 
+          <b>After entering your answer, a white arrow will appear signifying the correct intensity of the sound on the range.</b>
+          <div class="start-container">
+            <button type="button" class="start" id="button" onclick="setup()">Start</button>
+          </div>
         </div>
       </div>
       <div class="game box-flex" id="game-display">
         <div class="box display" id="display-container">
-          <h1 class="display" id="display-object">aaaaaaa</h1>
-          <b class="display" id="display-score">bbbbbbb</b>
+          <h1 class="display" id="display-object">An error occured :(</h1>
+          <b class="display" id="display-score">If you are seeing this, then something went wrong. Try reloading this page!</b>
           <div class="display" id="display-next">
             <button>Next ></button>
             <a href="guess.html"><button>↺</button></a>
@@ -47,5 +47,6 @@
         </div>
       </div>
     </div>
+    <svg class="fader"></svg>
   </body>
 </html>

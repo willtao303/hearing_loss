@@ -1,11 +1,43 @@
 var score = 0
 var qIndex = 0;
-var questions = [];
+var questions = [
+  {
+    "object": "siren",
+    "image": "images/sirens.jpg",
+    "src": "www.istockphoto.com",
+    "db": 115
+  },
+  {
+    "object": "jackhammer",
+    "image": "images/jackhammer.jpg",
+    "src": "www.istockphoto.com",
+    "db": 130
+  },
+  {
+    "object": "coffee grinder",
+    "image": "images/coffee.png",
+    "src": "www.pexels.com",
+    "db": 75
+  },
+  {
+    "object": "washing machine",
+    "image": "images/no-image.png",
+    "src": "",
+    "db": 70
+  },
+  {
+    "object": "whisper",
+    "image": "images/whisper.jpg",
+    "src": "www.123rf.com",
+    "db": 30
+  }
+]
+;
 let maxQ = 5-1;
 
 async function setup() {
   
-  await fetch("https://withercraft303.github.io/hearing_loss/js/questions.txt")
+  /*await fetch("https://withercraft303.github.io/hearing_loss/js/questions.txt")
     .then(res => res.json())
     .then((data) => {
       console.log(data);
@@ -13,13 +45,13 @@ async function setup() {
   }).catch(err => {
     console.log("no file");
     console.error(err);
-  });
+  });*/
   document.getElementById("pregame").style.visibility = "hidden";
   document.getElementById("game-display").style.visibility = "visible";
   document.getElementById("game-controls").style.visibility = "visible";
   
   document.getElementById("display-object").innerHTML = questions[qIndex]["object"];
-  document.getElementById("display-score").innerHTML = "Score: " + score 
+  document.getElementById("display-score").innerHTML = "Score: " + score;
 }
 
 function shuffle(){

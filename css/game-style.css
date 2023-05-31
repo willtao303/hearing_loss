@@ -15,7 +15,7 @@ body{
   background-position: center;
   overflow: hidden;
 
-  background: linear-gradient(-45deg, #455961, #6e828a, #7680a1);
+  background: linear-gradient(-45deg, #3f5057, #6e828a, #8595c7);
   background-size: 400% 400%;
   animation: gradient-bg 20s ease infinite;
 }
@@ -35,10 +35,6 @@ body{
 .pregame{
   z-index: 1;
 }
-.game{
-  visibility:hidden;
-  z-index: -1;
-}
 
 .col {
   background: aliceblue;
@@ -46,18 +42,88 @@ body{
   height: 100%;
   width: 35%;
   opacity: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
+.fader {
+  opacity: 0%;
+  background: rgb(235, 248, 252);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+  animation: onload-fade 400ms 1;
+}
 @keyframes onload-fade {
   from{
-    opacity:100%;
+    opacity:1;
+  }
+  10%{
+    opacity:1;
   }
   to{
-    opacity:0%;
+    opacity: 0;
   }
 }
 
+.text-container{
+  position:absolute;
+  font-weight: lighter;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom:80px;
+}
 
+h1#col-title{
+  -webkit-text-fill-color: #2f3861;
+  margin-top:0;
+  padding-top: 0;
+  font-size: 50px;
+}
+b {
+  -webkit-text-fill-color: #2f3861;
+  text-align: center;
+  font-size:18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.options{
+  padding-left: 20px;
+}
+
+.start-container{
+  margin-top:30px;
+  width: 100%;
+  display:flex;
+}
+.start{
+  margin-left:auto;
+  margin-right:auto;
+  height: 50px;
+  width: 100px;
+  border-width: 5px;
+  border-style: outset;
+  background:rgb(16, 16, 36);
+  border-color: rgb(16, 16, 36);
+  color: aliceblue;
+  border-radius: 24px;
+  transition: background 0.5s, color 0.5s, border-color 0.5s;
+  font-family:sans-serif;
+  font-size: 15px;
+}
+.start:hover{
+  background:aliceblue;
+  color: rgb(121, 121, 255);
+  border-color: rgb(121, 121, 255);
+}
+
+/*-----------*/
+
+.game{
+  visibility:hidden;
+  z-index: -1;
+}
 
 .box-flex {
   position:fixed;
