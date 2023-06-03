@@ -2,49 +2,33 @@
 <html lang="en">
     <head>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/game-style.css">
-    <script type="text/javascript" src="js/game.js"></script>
+    <link rel="stylesheet" href="css/game.css">
+    <script type="text/javascript" src="js/game-main.js"></script>
     <title>title here</title>
   </head>
 
   <body>
     <div class="main">
-      <div class="pregame col" id="pregame">
-        <div class="text-container">
-          <h1 id="col-title">Let's Play a Game!</h1>
-          <b>Try to guess how safe exposure to these sounds are using the following buttons: </b><br><br>
-          <div class="options">
-            <b>Green (safe): a relatively safe sound</b><br>
-            <b>Orange (unsafe): prolonged exposure can harm your ears</b><br>
-            <b>red (dangerous): exposure will cause immenant harm your ears</b><br>
-          </div><br> 
-          <b>After entering your answer, a white arrow will appear signifying the correct intensity of the sound on the range.</b>
+      <div class="background"></div>
+      <div class="col" id="col">
+
+        <div class="choosegame" id="choosegame">
+          <a href="game1.html">
+            <button type="button" id="game1-button" onclick="infogame1()">A</button>
+          </a>
+          
+          <a href="game2.html">
+            <button type="button" id="game2-button"  onclick="infogame2()">B</button>
+          </a>
+        </div>
+
+        <!--<div class="pregame text-container" id="pregame2">
+          <h1 id="col-title">Guess the decibel: RHHS edition!</h1>
+          <b>We sampled the intensity of sound sources in different locations at rhhs. Guess how loud each location is and see how close you are!</b><br><br>
           <div class="start-container">
-            <button type="button" class="start" id="button" onclick="setup()">Start</button>
+            <button type="button" class="start" id="button" onclick="startgame2()">Start</button>
           </div>
-        </div>
-      </div>
-      <div class="game box-flex" id="game-display">
-        <div class="box display" id="display-container">
-          <h1 class="display" id="display-object">An error occured :(</h1>
-          <b class="display" id="display-score">If you are seeing this, then something went wrong. Try reloading this page!</b>
-          <div class="display" id="display-next">
-            <button>Next ></button>
-            <a href="guess.html"><button>↺</button></a>
-          </div>
-        </div>
-      </div>
-      <div class="game select" id="game-controls">
-        <input type="range" disabled="true" class="display" id="display-answer">
-        <div class="button-container" id="safe-container">
-          <button type="button" class="button" id="safe" onClick="isSafe()"></button>
-        </div>
-        <div class="button-container" id="unsafe-container">
-          <button type="button" class="button" id="unsafe" onClick="isUnsafe()"></button>
-        </div>
-        <div class="button-container" id="dangerous-container">
-          <button type="button" class="button" id="dangerous" onClick="isDangerous()"></button>
-        </div>
+        </div> -->
       </div>
     </div>
     <svg class="fader"></svg>

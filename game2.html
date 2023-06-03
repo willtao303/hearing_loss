@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/game2-style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script type="text/javascript" src="js/game2.js"></script>
+    <title>title here</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="background"></div>
+      <svg class="fader-col"></svg>
+      <div class="col" id="col">
+        <div class="pregame text-container" id="pregame1">
+          <h1 id="col-title">Guess the decibel: RHHS edition!</h1>
+          <b>We sampled the noise level at different locations in Richmond Hill High School. Try to guess how loud each location is, and see how close your guess was!</b>
+          <div class="start-container">
+            <button type="button" class="start" id="button" onclick="startgame()">Start</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game1 box-flex" id="game1-display">
+        <b class="display" id="display-score">Score: N/A</b>
+        <div class="box display" id="display-container">
+          <h1 class="display" id="display-object">If you are seeing this, then something went wrong. Try reloading this page!</h1>
+          <img src="img/not-found.png" id="display-image">
+          <div class="display" id="display-next">
+            <button>Next ></button>
+            <a href="guess.html"><button>↺</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="game1 select" id="game1-controls">
+        <input type="range" class="display" id="display-answer">
+      </div>
+    </div>
+  </body>
+</html>

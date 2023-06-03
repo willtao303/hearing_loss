@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/game1-style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <script type="text/javascript" src="js/game1.js"></script>
+    <title>title here</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="background"></div>
+      <svg class="fader-col"></svg>
+      <div class="col" id="col">
+        <div class="pregame text-container" id="pregame1">
+          <h1 id="col-title">Let's Play a Game!</h1>
+          <b>Try to guess how safe exposure to these sounds are using the following buttons: </b><br><br>
+          <div class="options">
+            <b>Green (safe): a relatively safe sound</b><br>
+            <b>Orange (unsafe): prolonged exposure can harm your ears</b><br>
+            <b>red (dangerous): exposure will cause immenant harm your ears</b><br>
+          </div><br> 
+          <b>After entering your answer, a white arrow will appear signifying the correct intensity of the sound on the range.</b>
+          <div class="start-container">
+            <button type="button" class="start" id="button" onclick="startgame()">Start</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game1 box-flex" id="game1-display">
+        <b class="display" id="display-score">Score: N/A</b>
+        <div class="box display" id="display-container">
+          <h1 class="display" id="display-object">If you are seeing this, then something went wrong. Try reloading this page!</h1>
+          <h2 class="display" id="display-win"></h2>
+          <img src="img/not-found.png" id="display-image">
+          <div class="display" id="display-next">
+            <a href="page2.html"></a><button id="next">Next ></button></a>
+            <a href="guess.html"><button id="restart">↺</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="game1 select" id="game1-controls">
+        <input type="range" disabled="true" class="display" id="display-answer">
+        <div class="button-container" id="safe-container">
+          <button type="button" class="button" id="safe" onClick="isSafe()"></button>
+        </div>
+        <div class="button-container" id="unsafe-container">
+          <button type="button" class="button" id="unsafe" onClick="isUnsafe()"></button>
+        </div>
+        <div class="button-container" id="dangerous-container">
+          <button type="button" class="button" id="dangerous" onClick="isDangerous()"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
