@@ -1,0 +1,110 @@
+body{
+  margin:0px;
+  position:fixed;
+  min-height:100%;
+  width:100%;
+}
+.main{
+  height:100%;
+  width:100%;
+  position:fixed;
+  background-image: url("../img/bg.jpg");
+  background-size:cover;
+  background-position: center;
+  overflow: hidden;
+}
+.dim{
+  background-color:#13324475;
+  width:100%;
+  height:100%;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+.col {
+  position:relative;
+
+  background: aliceblue;
+  opacity: 95%;
+
+  margin-left:17%;
+  margin-right:15%;
+
+  height:100vh;
+  overflow:scroll;
+}
+.col::-webkit-scrollbar {
+  width: 10px;
+}
+.col::-webkit-scrollbar-track {
+  box-shadow: none; 
+  border-radius: 0px;
+}
+.col::-webkit-scrollbar-thumb {
+  background: rgb(197, 197, 197); 
+  border-radius: 5px;
+}
+
+.text-container{
+  padding-left:80px;
+  padding-right:80px;
+
+  font-family: Roboto, Oxygen, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+
+}
+
+.fade-text{
+  position:sticky;
+  height:100px;
+  width:100%;
+  bottom:0;
+  background:linear-gradient(
+    to bottom,
+    transparent 0%,
+    aliceblue 60%,
+    aliceblue 100%
+  );
+}
+
+#fader {
+  opacity: 0%;
+  background: rgb(235, 248, 252);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 999;
+  animation: fade-out 1s 1;
+}
+@keyframes fade-out {
+  from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+
+
+.sidebar#arrow {
+  position:fixed;
+  background:aliceblue;
+  height: 50px;
+  width:50px;
+  left:0px;
+  top:10px;
+  transition:all 1s;
+}
+.sidebar#nav {
+  position:fixed;
+  height:200%;
+  width:150px;
+  background:aliceblue;
+  left:-150px;
+  top:-25px;
+  rotate:0deg;
+  transition:all 1s;
+}
+.sidebar#arrow:hover #nav{
+  rotate:8deg;
+}
