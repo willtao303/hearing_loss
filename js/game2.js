@@ -76,25 +76,29 @@ function loadNextQuestion(){
   document.getElementById("left-button").disabled = true;
   document.getElementById("right-button").disabled = true;
 
-  if (index >= questions.length){
-    return;
-  }
 
-  /* change to next question */
   if (questions[right]["dba"] > questions[left]["dba"]){
     document.getElementById("left-button").style.background = "#ff849f";
     document.getElementById("right-button").style.background = "#a1eeb8";
-    document.getElementById("left-button").classList.add("change-option");
+    if (index < questions.length){
+      document.getElementById("left-button").classList.add("change-option");
+    }
     left = index;
     index++;
   } else {
     document.getElementById("left-button").style.background = "#a1eeb8";
     document.getElementById("right-button").style.background = "#ff849f";
-    document.getElementById("right-button").classList.add("change-option");
+    if (index < questions.length){
+      document.getElementById("right-button").classList.add("change-option");
+    }
     right = index;
     index++;
   }
 
+  if (index > questions.length){
+    return;
+  }
+  /* change to next question */
   setTimeout(function(){
     document.getElementById("left-button").innerHTML = questions[left]["place"];
     document.getElementById("right-button").innerHTML = questions[right]["place"];

@@ -27,14 +27,14 @@ function startgame(){
 }
 
 async function loadgame() {
-  var questionSet = await fetch("https://withercraft303.github.io/hearing_loss/js/questions.txt")
+  var questionSet;
+  await fetch("https://withercraft303.github.io/hearing_loss/js/questions.txt")
     .then(res => res.json())
     .then((data) => {
       console.log(data);
-      questions = data;
+      questionSet = data;
   }).catch(err => {
     console.log("no file");
-    console.error(err);
   });
 
   generateQuestions(questionSet);
