@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/game2-style.css">
     <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/game2-style.css">
     <script type="text/javascript" src="js/game2.js"></script>
     <title>title here</title>
   </head>
@@ -22,19 +22,17 @@
         </div>
       </div>
 
-      <div class="game box-flex" id="game-display">
+      <div class="game" id="game-display">
+        <b class="display">Which one was louder?</b><br>
         <b class="display" id="display-score">Score: N/A</b>
-        <div class="box display" id="display-container">
-          <h1 class="display" id="display-object">If you are seeing this, then something went wrong. Try reloading this page!</h1>
-          <img src="img/not-found.png" id="display-image">
-          <div class="display" id="display-next">
-            <button>Next ></button>
-            <a href="guess.html"><button>↺</button></a>
-          </div>
-        </div>
       </div>
-      <div class="game1 select" id="game1-controls">
-        <input type="range" class="display" id="display-answer">
+      <div class="game box-flex" id="game-options">
+        <div class="choice" id="left-choice">
+          <button class="choice-button" id="left-button">A</button>
+        </div>
+        <div class="choice" id="right-choice">
+          <button class="choice-button" id="right-button">B</button>
+        </div>
       </div>
     </div>
   </body>

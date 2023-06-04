@@ -36,48 +36,16 @@ async function loadgame() {
     console.log("no file");
     console.error(err);
   });
-questionSet = [
-  {
-    "object": "siren",
-    "image": "img/sirens.jpg",
-    "src": "www.istockphoto.com",
-    "db": 115
-  },
-  {
-    "object": "jackhammer",
-    "image": "img/jackhammer.jpg",
-    "src": "www.istockphoto.com",
-    "db": 130
-  },
-  {
-    "object": "coffee grinder",
-    "image": "img/coffee.png",
-    "src": "www.pexels.com",
-    "db": 75
-  },
-  {
-    "object": "washing machine",
-    "image": "img/not-found.png",
-    "src": "",
-    "db": 70
-  },
-  {
-    "object": "whisper",
-    "image": "img/whisper.jpg",
-    "src": "www.123rf.com",
-    "db": 30
-  }
-];
 
   generateQuestions(questionSet);
 
   console.log("Animation ended");
 
   document.getElementById("col").style.visibility = "hidden";
-  document.getElementById("game1-display").style.visibility = "visible";
-  document.getElementById("game1-controls").style.visibility = "visible";
-  document.getElementById("game1-display").classList.add("fade-in-fast");
-  document.getElementById("game1-controls").classList.add("fade-in-fast");
+  document.getElementById("game-display").style.visibility = "visible";
+  document.getElementById("game-controls").style.visibility = "visible";
+  document.getElementById("game-display").classList.add("fade-in-fast");
+  document.getElementById("game-controls").classList.add("fade-in-fast");
   
   document.getElementById("display-object").innerHTML = questions[qIndex]["object"];
   document.getElementById("display-score").innerHTML = "Score: " + score;

@@ -66,10 +66,6 @@ b {
 }
 
 /*-----------*/
-.game1{
-  visibility:hidden;
-  z-index: -1;
-}
 
 .box-flex {
   position:fixed;
