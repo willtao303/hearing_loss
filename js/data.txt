@@ -35,13 +35,6 @@
     "dose": 18.0
   },
   {
-    "place": "Music Room",
-    "runtime": 61,
-    "dba": 77.6,
-    "db": 50.9,
-    "dose": 18.0
-  },
-  {
     "place": "Office",
     "runtime": 60,
     "dba": 61.3,
