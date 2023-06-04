@@ -57,7 +57,7 @@
   },
   {
     "place": "Front foyer",
-    "runtime": ,
+    "runtime": 60,
     "dba": 64.9,
     "db": 38.2,
     "dose": 1.0
