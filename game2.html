@@ -14,8 +14,8 @@
       <svg class="fader-col"></svg>
       <div class="col" id="col">
         <div class="pregame text-container" id="pregame1">
-          <h1 id="col-title">Guess the decibel: RHHS edition!</h1>
-          <b>We sampled the noise level at different locations in Richmond Hill High School. Try to guess how loud each location is, and see how close your guess was!</b>
+          <h1 id="col-title">Guess the decibel: <br>RHHS edition!</h1>
+          <b>We sampled the noise level at different locations in Richmond Hill High School. <br><br> Try to guess which noise was louder!</b>
           <div class="start-container">
             <button type="button" class="start" id="button" onclick="startgame()">Start</button>
           </div>
@@ -23,8 +23,15 @@
       </div>
 
       <div class="game" id="game-display">
-        <b class="display">Which one was louder?</b><br>
-        <b class="display" id="display-score">Score: N/A</b>
+        <div id="game-text-container">
+          <b class="display" id="display-line">Which one was louder?</b><br>
+          <b class="display" id="display-score">Score: N/A</b>
+          <div class="display-buttons hide" id="next-button-bar">
+            <a href="data.html" class="link-container" id="data-container"><button class="link-button" id="data-button">Data</button></a>
+            <a href="more-info.html" class="link-container" id="next-container"><button class="link-button" id="next-button">Next</button></a>
+            <a href="guess.html" class="link-container" id="restart-container"><button class="link-button" id="restart-button">↺</button></a>
+          </div>
+        </div>
       </div>
       <div class="game box-flex" id="game-options">
         <div class="choice" id="left-choice">
