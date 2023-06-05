@@ -1,0 +1,48 @@
+#choosegame {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width:20vw;
+}
+
+.button {
+  width: 100%;
+  height: 20vw;
+  
+  border: solid;
+  border-color: #5d718e;
+  border-width: 5px;
+  border-radius: 20px;
+
+  color:transparent;
+  transition: all 0.5s;
+}
+
+.button:hover{
+  transform: translateX(20px);
+}
+
+#game1-button {
+  background: url("../img/game1-button.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#game2-button {
+  background: url("../img/game2-button.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#skip-button {
+  height: 4vw;
+  background: url("../img/skip-button.png");
+  background-size: cover;
+  background-position: center;
+}

@@ -123,18 +123,19 @@ function finish(){
   document.getElementById("game-display").classList.add("finish-box-change");
   document.getElementById("game-text-container").classList.add("finish-text-change");
   document.getElementById("game-text-container").classList.add("finish-text-change");
+  document.getElementById("game-options").style.height = 0;
 
   if (score <= 6){
     document.getElementById("display-line").innerHTML = "Nice!";
   }
-  if (score == 7){
+  if (score == 8){
     document.getElementById("display-line").innerHTML = "So Close!";
   }
-  if (score == 8){
+  if (score == 9){
     document.getElementById("display-line").innerHTML = "Perfect!";
   }
 
-  document.getElementById("display-score").innerHTML = "Score: " + score + "/8";
+  document.getElementById("display-score").innerHTML = "Score: " + score + "/9";
   document.getElementById("next-button-bar").classList.remove("hide");
 
 }

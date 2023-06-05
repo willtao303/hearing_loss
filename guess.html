@@ -3,6 +3,7 @@
     <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="css/game-menu.css">
     <script type="text/javascript" src="js/game-main.js"></script>
     <title>Choose a Game</title>
   </head>
@@ -13,20 +14,21 @@
       <div class="col" id="col">
 
         <div class="choosegame" id="choosegame">
-          <a href="game1.html">
-            <button type="button" id="game1-button">A</button>
+          <a href="game1.html" class="button-container">
+            <button type="button" class="button" id="game1-button">A</button>
           </a>
           
-          <a href="game2.html">
-            <button type="button" id="game2-button">B</button>
+          <a href="game2.html" class="button-container">
+            <button type="button" class="button" id="game2-button">B</button>
           </a>
 
-          <a href="more-info.html">
-            <button type="button" id="skip-button">skip</button>
+          <a href="more-info.html" class="button-container" id="skip-container">
+            <button type="button" class="button" id="skip-button">skip</button>
           </a>
         </div>
       </div>
     </div>
+    <!--<script>setup()</script> -->
     <svg class="fader"></svg>
   </body>
 </html>
