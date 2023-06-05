@@ -26,27 +26,6 @@ async function loadgame(){
   });
 
   questions = shuffle(rawData);
-  questions = [{
-    "place": "Physics classroom",
-    "runtime": 61,
-    "dba": 66.0,
-    "db": 39.4,
-    "dose": 1.2
-  },
-  {
-    "place": "Whiteboard tables",
-    "runtime": 49,
-    "dba": 58.5,
-    "db": 30.8,
-    "dose": 0.2
-  },
-  {
-    "place": "Gym",
-    "runtime": 62,
-    "dba": 67.5,
-    "db": 40.9,
-    "dose": 1.8
-  }]
   
   document.getElementById("game-display").classList.add("fade-in");
   document.getElementById("game-options").classList.add("fade-in");
