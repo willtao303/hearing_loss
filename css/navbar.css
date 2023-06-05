@@ -1,0 +1,86 @@
+.sidebar#arrow {
+    position:fixed;
+    left:0px;
+    top:10px;
+  
+    background:aliceblue;
+  
+    border:solid;
+    border-width:5px;
+    border-left-width: 0;
+    border-color:#b7cee4;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
+    height: 50px;
+    width:50px;
+    
+    transition:all 1s;
+  }
+  .sidebar#nav {
+    position:fixed;
+    left:-150px;
+    top:-25px;
+    rotate:0deg;
+  
+    background:aliceblue;
+  
+    border:solid;
+    border-width:0px;
+    border-right-width: 6px;
+    border-color:#b7cee4;
+  
+    height:200%;
+    width:150px;
+  
+    transition:all 1s;
+
+    display:flex;
+    flex-direction: column;
+    padding-top:50px;
+  }
+  .sidebar#arrow:hover #nav{
+    rotate:8deg;
+  }
+
+  .nav-button-container{
+    margin-left: auto;
+    margin-right:0px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    transition:all 1s;
+  }
+  .sidebar#arrow:hover .nav-button-container{
+    margin-right:-20px;
+  }
+
+  .nav-button{
+    width: 50px;
+    height:50px;
+    font-size:0px;
+
+    border:solid;
+    border-width:5px;
+    border-radius:8px;
+    border-color:#b7cee4;
+
+    background-color:aliceblue;
+    background-position: center;
+    background-size:cover;
+  }
+  .nav-button:hover{
+    transform:translateX(10px);
+  }
+
+  #home-nav{
+    background-image:url("../img/icon/home.png")
+  }
+  #info-nav{
+    background-image:url("../img/icon/ear.png")
+  }
+  #game-nav{
+    background-image:url("../img/icon/game.png")
+  }
+  #data-nav{
+    background-image:url("../img/icon/data.png")
+  }
