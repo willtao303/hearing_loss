@@ -3,27 +3,45 @@
     <head>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <script type="text/javascript" src="js/table.js"></script>
     <title>Lab Data</title>
   </head>
   <body>
     <div id="main">
+      <svg class="background"></svg>
+      <div class="sidebar" id="arrow">
+        <div class="sidebar" id="nav">
+          <a href="index.html" class="nav-button-container"><button class="nav-button" id="home-nav">home</button></a>
+          <a href="info.html" class="nav-button-container"><button class="nav-button" id="info-nav">info</button></a>
+          <a href="guess.html" class="nav-button-container"><button class="nav-button" id="game-nav">game</button></a>
+          <a href="data.html" class="nav-button-container"><button class="nav-button" id="data-nav" disabled="true">data</button></a>
+        </div>
+      </div>
       <div id="loading-container">
         <img id="loading" src="img/loading.gif">
       </div>
-      <div id="table-container">
-        <table id="table">
-          <tr>
-            <th>Location</th>
-            <th>Time</th>
-            <th>Avg dBA</th>
-            <th>Avg dB</th>
-            <th>Dose %</th>
-          </tr>
-        </table>
-      </div>
-      <div id="text-container">
-
+      <div id="col">
+        <div id="table-container">
+          <table id="table">
+            <tr>
+              <th>Location</th>
+              <th>Time</th>
+              <th>Avg dBA</th>
+              <th>Avg dB</th>
+              <th>Dose %</th>
+            </tr>
+          </table>
+        </div>
+        <div id="text-container">
+          <b>Procedure:</b>
+          <b>Collected Data:</b>
+          <li>Location: the location at which the data was sampled.</li>
+          <li>Runtime: the length of the recorded period.</li>
+          <li>dBA: an average decibel measure that takes pitch into account.</li>
+          <li>dB: an average decibel measure. measures the intensity of the sound.</li>
+          <li>dose: the sound dose if you were to listen to that intenstiy of sound for 8 hours.</li>
+        </div>
       </div>
     </div>
     <script>setup()</script>

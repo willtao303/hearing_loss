@@ -1,5 +1,48 @@
-.main{
+#main{
   display:flex;
+  height: 100%;
+  width: 100%;
+  background: #455961;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  background: linear-gradient(-45deg, #3f5057, #6e828a, #8595c7);
+  background-size: 400% 400%;
+  animation: gradient-bg 20s ease infinite;
+}
+body {
+  margin: 0px;
+  position: fixed;
+  overflow: hidden;
+  min-height: 100%;
+  width: 100%;
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.background {
+  background-image: url("../img/sound-tile.png");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat;
+  background-size: 300px;
+  opacity: 20%;
+  z-index: -1;
 }
 
 #loading-container{
@@ -12,4 +55,38 @@
 }
 #loading{
   margin:auto;
+}
+
+#col{
+  background: white;
+  min-height:100%;
+  width:60%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:80px;
+}
+
+#data-nav{
+  background-color:rgb(208, 235, 255);
+}
+#data-nav:hover{
+  transform:none;
+}
+
+#table-container{
+  display:flex;
+  width:100%;
+  flex-wrap:wrap;
+  margin-bottom:50px;
+}
+#table{
+  margin-left:auto;
+  margin-right:auto;
+
+}
+#text-container{
+  display:flex;
+  flex-direction: column;
+  padding-left:15%;
+  padding-right:15%;
 }
